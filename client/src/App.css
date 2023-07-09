@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+}
+body {
+    color: #323232;
+    background-color: #f8f8f3;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    padding: 10px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header a.logo {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+div.post {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 600px) {
+    div.post {
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+}
+
+div.post div.texts h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+div.post div.texts a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div.post p.info {
+    margin: 6px 0;
+    color: #898989;
+    font-size: 0.7rem;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+
+div.post p.info a.author {
+    color: #282828;
+}
+
+div.post p.summary {
+    margin: 10px 0;
+    line-height: 1.4rem;
+}
+
+form.register,
+form.login {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px 7px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+input:focus {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px 7px;
+    /* change input outline when focus */
+    outline: 1px solid #686868;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    background-color: #686868;
+    border: 0;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 6px 0;
+}
+
+form.login h1,
+form.register h1 {
+    text-align: center;
+    color: #686868;
+}
+
+div.post-page div.image {
+    max-height: 300px;
+    display: flex;
+    overflow: hidden;
+}
+div.post-page div.image img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}
+
+div.post-page a {
+    color: #323232;
+    text-decoration: underline;
+}
+div.post-page h1 {
+    text-align: center;
+    margin: 10px 0 5px;
+}
+div.post-page time {
+    text-align: center;
+    display: block;
+    font-size: 0.7rem;
+    color: #bbbbbb;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+div.post-page div.author {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    display: block;
+    /* font-size: 0.8rem; */
+    color: #898989;
+    font-weight: bold;
+}
+
+div.post-page div.content p {
+    line-height: 1.6rem;
+}
+
+div.edit-row {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+div.post-page a.edit-btn {
+    background-color: #e5e5e5;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+a svg {
+    height: 20px;
+}
